@@ -1,11 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./assets/components/Sidebar";
-import { Dashboard, Leaderboard, Settings } from "@mui/icons-material";
+import { Leaderboard, Settings } from "@mui/icons-material";
 import Discover from "./features/pages/Discover/Discover";
 import QuizLibrary from "./features/pages/QuizLibrary/QuizLibrary";
 import { Box } from "@mui/material";
 import Topbar from "./assets/components/Topbar";
+import Dashboard from "./features/pages/Dashboard/Dashboard";
 
 function App() {
   return (

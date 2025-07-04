@@ -1,23 +1,15 @@
 export const desktopOS = [
   {
-    label: "Windows",
-    value: 72.72,
+    label: "Music",
+    value: 40.72,
   },
   {
-    label: "OS X",
-    value: 16.38,
+    label: "Sports",
+    value: 46.38,
   },
   {
-    label: "Linux",
-    value: 3.83,
-  },
-  {
-    label: "Chrome OS",
-    value: 2.42,
-  },
-  {
-    label: "Other",
-    value: 4.65,
+    label: "Math",
+    value: 40.83,
   },
 ];
 

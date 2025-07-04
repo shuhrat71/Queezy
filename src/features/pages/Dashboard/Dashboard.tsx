@@ -4,8 +4,8 @@ import { QuizePerformanceDiagram } from ".";
 
 type Props = {};
 const size = {
-  width: 200,
-  height: 200,
+  width: 300,
+  height: 300,
 };
 
 const data = {
@@ -15,22 +15,27 @@ const data = {
 function Dashboard({}: Props) {
   return (
     <>
-      <h1>dsd</h1>
-      <h1>sacsa</h1>
       <QuizePerformanceDiagram>
         <PieChart
           series={[
             {
               arcLabel: (item) => `${item.value}%`,
-              arcLabelMinAngle: 35,
+              arcLabelMinAngle: 45,
               arcLabelRadius: "60%",
+
               ...data,
             },
           ]}
           sx={{
             [`& .${pieArcLabelClasses.root}`]: {
-              fontWeight: "bold",
+              fill: "#fff",
+              fontSize: "1.2rem",
+              fontWeight: 700,
             },
+            display: "flex",
+            flexDirection: "column-reverse",
+            alignItems: "flex-start",
+            color: "#fff",
           }}
           {...size}
         />
