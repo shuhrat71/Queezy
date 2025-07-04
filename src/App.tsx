@@ -2,29 +2,59 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Sidebar from "./assets/components/Sidebar";
 import { Dashboard, Leaderboard, Settings } from "@mui/icons-material";
-
-import Layout from "./components/layout/layout";
 import Discover from "./features/pages/Discover/Discover";
 import QuizLibrary from "./features/pages/QuizLibrary/QuizLibrary";
+import { Box } from "@mui/material";
+import Topbar from "./assets/components/Topbar";
 
 function App() {
   return (
-    <>
-      <div style={{ display: "flex" }}>
+    <Box sx={{ display: "flex", height: "100vh", width: "100vw" }}>
+      {/* Sidebar chapda */}
+      <Box sx={{ width: 250, flexShrink: 0 }}>
         <Sidebar />
-        <div style={{ flex: 1, padding: "24px" }}>
+      </Box>
+
+      <Box
+        sx={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          minWidth: 0,
+          overflow: "hidden",
+        }}
+      >
+        <Box
+          sx={{
+            height: 100,
+            width: "100%",
+            backgroundColor: "#fff",
+            boxShadow: "0px 2px 4px rgba(0,0,0,0.05)",
+            zIndex: 1,
+          }}
+        >
+          <Topbar />
+        </Box>
+
+        <Box
+          sx={{
+            flex: 1,
+            overflowY: "auto",
+            backgroundColor: "#f9f9fc",
+            padding: 3,
+            color: "#333",
+          }}
+        >
           <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Dashboard />} />
-              <Route path="/leaderboard" element={<Leaderboard />} />
-              <Route path="/discover" element={<Discover />} />
-              <Route path="/quizLibrary" element={<QuizLibrary />} />
-              <Route path="/settings" element={<Settings />} />
-            </Route>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/quizLibrary" element={<QuizLibrary />} />
+            <Route path="/discover" element={<Discover />} />
+            <Route path="/leaderboard" element={<Leaderboard />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
-        </div>
-      </div>
-    </>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

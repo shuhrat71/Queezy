@@ -1,11 +1,6 @@
 import styled from "@emotion/styled";
 import Button from "@mui/material/Button";
-interface SidebarButtonProps {
-  icon: React.ReactNode;
-  label: string;
-  active: boolean;
-  onClick: () => void;
-}
+
 export const SidebarLogo = styled.div`
   width: 100%;
   margin-top: 40px;

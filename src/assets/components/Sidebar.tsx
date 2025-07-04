@@ -6,7 +6,7 @@ import LeaderboardIcon from "@mui/icons-material/Leaderboard";
 import SettingsIcon from "@mui/icons-material/Settings";
 
 import LogoQuuezy from "../../../public/Logo-Quezzy.svg";
-import { SidebarButton, SidebarLogo } from "../../components/layout/style";
+import { SidebarButton, SidebarLogo } from "./style/sidebar";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -18,20 +18,21 @@ const navItems = [
 ];
 
 const Sidebar = () => {
-  const [activeItem, setActiveItem] = useState("Dashboard");
+  const [activeItem, setActiveItem] = useState(navItems[0].label);
   const navigate = useNavigate();
 
   return (
     <Box
       sx={{
-        width: 250,
+        width: "250px",
         height: "100%",
         bgcolor: "#6a5ae0",
-        color: "white",
-        position: "absolute",
-        padding: "0 20px 0 20px",
-        left: 0,
+        color: "#fff",
+        padding: 2,
+        boxSizing: "border-box",
         top: 0,
+        left: 0,
+        position: "fixed",
       }}
     >
       <SidebarLogo>
