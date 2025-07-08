@@ -33,6 +33,7 @@ const Sidebar = () => {
         top: 0,
         left: 0,
         position: "fixed",
+        zIndex: 1000,
       }}
     >
       <SidebarLogo>
