@@ -47,7 +47,7 @@ function App() {
           }}
         >
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/quizLibrary" element={<QuizLibrary />} />
             <Route path="/discover" element={<Discover />} />
             <Route path="/leaderboard" element={<Leaderboard />} />

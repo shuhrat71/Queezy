@@ -1,5 +1,13 @@
 import styled from "@emotion/styled";
 
+export const noBorderTextFieldSx = {
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": { border: "none" },
+    "&:hover fieldset": { border: "none" },
+    "&.Mui-focused fieldset": { border: "none" },
+  },
+};
+
 export const QuizLibraryWrapper = styled.div`
   padding: 32px 32px;
   border-radius: 32px;
@@ -62,6 +70,7 @@ export const CreateQuizModalHeader = styled.div`
 export const AddImage = styled.div`
   width: 100%;
   height: 200px;
+  padding: 20px;
   border-radius: 20px;
   background-color: #efeefc;
   border-style: dashed;
@@ -69,4 +78,29 @@ export const AddImage = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  img {
+    max-width: 330px;
+    height: auto;
+  }
+`;
+export const QuizeForm = styled.div`
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  h5 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  input {
+    border: 2px solid #efeefc;
+    border-radius: 20px;
+  }
+  button {
+    padding: 15px 16px;
+    border-radius: 20px;
+    outline: none;
+    background-color: #6a5ae0;
+  }
 `;
