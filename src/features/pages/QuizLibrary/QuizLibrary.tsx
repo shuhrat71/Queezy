@@ -13,6 +13,9 @@ import {
   CreateQuizModalHeader,
   MenubarBtns,
   noBorderTextFieldSx,
+  QuizCardBox,
+  QuizCardIconBox,
+  QuizCardWrapper,
   QuizeForm,
   QuizeMenuBar,
   QuizLibraryWrapper,
@@ -27,6 +30,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useDropzone } from "react-dropzone";
 import type { CategoryData } from "../types";
 import { CreateQuizModal } from "./CategoryModal";
+import { quizList } from "./mocData";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 type Props = {};
 const style = {
@@ -41,12 +46,12 @@ const style = {
   color: "#000000",
   borderRadius: "32px",
 };
+const quizData = quizList;
 function QuizLibrary({}: Props) {
   const [categoryOpen, setCategoryOpen] = useState(false);
   const [createOpen, setCreateOpen] = useState(false);
   const [image, setImage] = useState<string | null>(null);
 
-  // 🧠 HANDLERS
   const handleCreateQuiz = () => setCreateOpen(true);
   const handleCloseCreate = () => setCreateOpen(false);
   const handleCloseCategory = () => setCategoryOpen(false);
@@ -74,7 +79,6 @@ function QuizLibrary({}: Props) {
           Quiz Library
         </Typography>
       </Box>
-
       <QuizeMenuBar>
         <SearchBox>
           <img src={SearachIcon} alt="" />
@@ -95,7 +99,6 @@ function QuizLibrary({}: Props) {
           </Button>
         </MenubarBtns>
       </QuizeMenuBar>
-
       {/* 🎯 CREATE QUIZ MODAL */}
       <Modal
         open={createOpen}
@@ -163,13 +166,52 @@ function QuizLibrary({}: Props) {
           </Box>
         </Fade>
       </Modal>
-
-      {/* 🎯 CATEGORY MODAL */}
       <CreateQuizModal
         open={categoryOpen}
         onClose={handleCloseCategory}
         onSubmit={handleCategoryQuiz}
       />
+
+      <QuizCardWrapper>
+        {quizData.map((item) => {
+          const IconComponent = item.icon;
+          return (
+            <QuizCardBox>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
+              >
+                <QuizCardIconBox>
+                  <Box
+                    sx={{
+                      width: "50px",
+                      height: "50px",
+                      background: "#fff",
+                      borderRadius: "9.14px",
+                      position: "relative",
+                    }}
+                  >
+                    <IconComponent className="quizIcon" />
+                  </Box>
+                </QuizCardIconBox>
+                <Box>
+                  <MoreHorizIcon />
+                </Box>
+              </Box>
+              <Box>
+                <Typography variant="h6" fontSize={"16px"} fontWeight={600}>
+                  {item.title}
+                </Typography>
+                <Typography fontSize={15} color="#858494">
+                  {item.category} • {item.quizzesCount} Quizzes
+                </Typography>
+              </Box>
+            </QuizCardBox>
+          );
+        })}
+      </QuizCardWrapper>
     </QuizLibraryWrapper>
   );
 }
