@@ -29,8 +29,8 @@ import { useCallback, useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import { useDropzone } from "react-dropzone";
 import type { CategoryData } from "../types";
-import { CreateQuizModal } from "./CategoryModal";
-import { quizList } from "./mocData";
+import { CreateQuizModal } from "../QuizLibrary/components/CategoryModal";
+import { quizList } from "../QuizLibrary/components/mocData";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 type Props = {};

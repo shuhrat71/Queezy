@@ -8,9 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import type { CategoryData } from "../types";
-import { quizCategories } from "./mocData";
-import { BoxImg, CategoryQuizBox, ModalActionBtn } from ".";
+import type { CategoryData } from "../../types";
+import { quizCategories } from "../components/mocData";
+import { BoxImg, CategoryQuizBox, ModalActionBtn } from "../index";
 import CloseIcon from "@mui/icons-material/Close";
 const data = quizCategories;
 
@@ -67,7 +67,7 @@ export const CreateQuizModal = ({
           }}
         >
           {" "}
-          {data.map((item) => {
+          {data.map((item: any) => {
             const IconComponent = item.icon;
 
             return (

@@ -174,6 +174,7 @@ export const ModalActionBtn = styled.div`
 export const QuizCardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 16px;
   margin-top: 30px;
 `;
