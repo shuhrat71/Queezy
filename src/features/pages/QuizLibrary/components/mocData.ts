@@ -71,6 +71,19 @@ export const quizList = [
     category: "Sport",
     quizzesCount: 12,
     icon: SportsSoccerIcon,
+    description:
+      "Explore the fascinating history and memorable moments of the Olympic Games.",
+    questions: [
+      {
+        question: "When were the first modern Olympic Games held?",
+        description:
+          "Learn about the origin and timeline of the Olympic Games.",
+      },
+      {
+        question: "Which city has hosted the Olympics the most times?",
+        description: "Test your knowledge about Olympic host cities.",
+      },
+    ],
   },
   {
     id: 2,
@@ -78,6 +91,18 @@ export const quizList = [
     category: "Literature",
     quizzesCount: 15,
     icon: BarChartIcon,
+    description:
+      "Test your knowledge on world-famous classic novels and their authors.",
+    questions: [
+      {
+        question: "Who wrote 'Crime and Punishment'?",
+        description: "Explore famous classic authors and their works.",
+      },
+      {
+        question: "In which novel does 'Jay Gatsby' appear?",
+        description: "Identify characters and the novels they belong to.",
+      },
+    ],
   },
   {
     id: 3,
@@ -85,6 +110,18 @@ export const quizList = [
     category: "Techno",
     quizzesCount: 12,
     icon: MemoryIcon,
+    description:
+      "Dive into the biggest tech breakthroughs and modern innovations.",
+    questions: [
+      {
+        question: "Who invented the World Wide Web?",
+        description: "Discover key figures in technology development.",
+      },
+      {
+        question: "What is Moore's Law?",
+        description: "Understand growth trends in computer hardware.",
+      },
+    ],
   },
   {
     id: 4,
@@ -92,6 +129,18 @@ export const quizList = [
     category: "Science",
     quizzesCount: 12,
     icon: PsychologyIcon,
+    description:
+      "Challenge your understanding of biological systems and concepts.",
+    questions: [
+      {
+        question: "What part of the cell is known as the powerhouse?",
+        description: "Test your cell biology knowledge.",
+      },
+      {
+        question: "Which system controls body hormones?",
+        description: "Explore human systems and their roles.",
+      },
+    ],
   },
   {
     id: 5,
@@ -99,6 +148,18 @@ export const quizList = [
     category: "History",
     quizzesCount: 12,
     icon: HistoryEduIcon,
+    description:
+      "Discover the cultures, inventions, and leaders of ancient civilizations.",
+    questions: [
+      {
+        question: "Which river was central to Ancient Egyptian civilization?",
+        description: "Identify geography's role in early civilizations.",
+      },
+      {
+        question: "Who was the ruler of the Maurya Empire during its peak?",
+        description: "Learn about influential ancient rulers.",
+      },
+    ],
   },
   {
     id: 6,
@@ -106,6 +167,18 @@ export const quizList = [
     category: "Math",
     quizzesCount: 12,
     icon: QueryStatsIcon,
+    description:
+      "Solve real-world problems with statistics, probability, and data analysis.",
+    questions: [
+      {
+        question: "What is the mean of the numbers: 2, 4, 6, 8?",
+        description: "Practice calculating averages in data sets.",
+      },
+      {
+        question: "What does the standard deviation represent?",
+        description: "Understand spread and variability in data.",
+      },
+    ],
   },
   {
     id: 7,
@@ -113,6 +186,18 @@ export const quizList = [
     category: "Sport",
     quizzesCount: 12,
     icon: SportsSoccerIcon,
+    description:
+      "Show off your football team knowledge from leagues around the world.",
+    questions: [
+      {
+        question: "Which team has won the most UEFA Champions League titles?",
+        description: "Test your knowledge of European football.",
+      },
+      {
+        question: "Who is the all-time top scorer for FC Barcelona?",
+        description: "Identify legendary players and their stats.",
+      },
+    ],
   },
   {
     id: 8,
@@ -120,6 +205,18 @@ export const quizList = [
     category: "Science",
     quizzesCount: 12,
     icon: ScienceIcon,
+    description:
+      "Understand the core principles of life, cells, and organisms.",
+    questions: [
+      {
+        question: "What is the basic unit of life?",
+        description: "Reinforce foundational biology concepts.",
+      },
+      {
+        question: "What is the function of DNA?",
+        description: "Explore genetic material and its purpose.",
+      },
+    ],
   },
   {
     id: 9,
@@ -127,6 +224,18 @@ export const quizList = [
     category: "Science",
     quizzesCount: 12,
     icon: FunctionsIcon,
+    description:
+      "Explore the wonders of galaxies, stars, and cosmic phenomena.",
+    questions: [
+      {
+        question: "What galaxy is Earth located in?",
+        description: "Discover our position in the universe.",
+      },
+      {
+        question: "What are nebulas made of?",
+        description: "Understand the birthplaces of stars.",
+      },
+    ],
   },
   {
     id: 10,
@@ -134,6 +243,18 @@ export const quizList = [
     category: "Science",
     quizzesCount: 12,
     icon: PublicIcon,
+    description:
+      "Trace the journey of evolution from single cells to complex species.",
+    questions: [
+      {
+        question: "Who proposed the theory of natural selection?",
+        description: "Explore key concepts of evolutionary biology.",
+      },
+      {
+        question: "What is a common ancestor?",
+        description: "Learn about species connections through evolution.",
+      },
+    ],
   },
   {
     id: 11,
@@ -141,6 +262,18 @@ export const quizList = [
     category: "Science",
     quizzesCount: 12,
     icon: ScienceIcon,
+    description:
+      "Understand how elements combine and react in chemical processes.",
+    questions: [
+      {
+        question: "What is the product of HCl and NaOH reaction?",
+        description: "Examine acid-base chemical reactions.",
+      },
+      {
+        question: "What is a catalyst?",
+        description: "Understand how reactions speed up or slow down.",
+      },
+    ],
   },
   {
     id: 12,
@@ -148,5 +281,17 @@ export const quizList = [
     category: "Sport",
     quizzesCount: 12,
     icon: AutoStoriesIcon,
+    description:
+      "Test yourself on football players, team history, and championships.",
+    questions: [
+      {
+        question: "Which country won the 2018 FIFA World Cup?",
+        description: "Recall recent international football events.",
+      },
+      {
+        question: "Who is the all-time leading scorer in World Cup history?",
+        description: "Test your knowledge of football legends.",
+      },
+    ],
   },
 ];

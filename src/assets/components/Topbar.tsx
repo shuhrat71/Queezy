@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-
 import {
   SearchBox,
   SearchModal,
@@ -8,21 +7,24 @@ import {
   TopLeftBar,
 } from "./style/topbar";
 import { Box, Modal, Typography } from "@mui/material";
-
 import SearchIcon from "../icons/SearchIcon.svg";
-const pathToTitleMap: Record<string, string> = {
-  "/": "Dashboard",
-  "/discover": "Discover",
-  "/quizLibrary": "Quiz Library",
-  "/leaderboard": "Leaderboard",
-  "/settings": "Settings",
-};
+
 const Topbar = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const location = useLocation();
-  const currentTitle = pathToTitleMap[location.pathname] || "";
+  const path = location.pathname;
+
+  // ✅ dynamic path bilan ishlash
+  let currentTitle = "";
+  if (path === "/") currentTitle = "Dashboard";
+  else if (path === "/discover") currentTitle = "Discover";
+  else if (path === "/quizLibrary") currentTitle = "Quiz Library";
+  else if (path.startsWith("/quiz/"))
+    currentTitle = "Quiz Library"; // 👈 dinamik ID bo‘lsa ham
+  else if (path === "/leaderboard") currentTitle = "Leaderboard";
+  else if (path === "/settings") currentTitle = "Settings";
 
   return (
     <TopbarWrapper>
@@ -36,6 +38,7 @@ const Topbar = () => {
           {currentTitle}
         </Typography>
       </Box>
+
       <Modal
         open={open}
         onClose={handleClose}
@@ -51,10 +54,11 @@ const Topbar = () => {
           </Typography>
         </Box>
       </Modal>
+
       <Box>
         <TopLeftBar>
           <SearchBox onClick={handleOpen}>
-            <img src={SearchIcon} alt="" />
+            <img src={SearchIcon} alt="search" />
           </SearchBox>
         </TopLeftBar>
       </Box>

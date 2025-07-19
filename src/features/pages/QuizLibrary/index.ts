@@ -50,15 +50,6 @@ export const MenubarBtns = styled.div`
     border: none;
     outline: none;
   }
-  button:first-child {
-    background-color: #efeefc;
-    border: 2px solid #7b61ff;
-    color: #6a5ae0;
-  }
-  button:nth-child(2) {
-    background-color: #6a5ae0;
-    color: #fff;
-  }
 `;
 export const CreateQuizModalHeader = styled.div`
   display: flex;
@@ -97,12 +88,12 @@ export const QuizeForm = styled.div`
     border: 2px solid #efeefc;
     border-radius: 20px;
   }
-  button {
+  /* button {
     padding: 15px 16px;
     border-radius: 20px;
     outline: none;
     background-color: #6a5ae0;
-  }
+  } */
 `;
 export const CategoryQuizBox = styled.div`
   width: 200px;
@@ -188,6 +179,12 @@ export const QuizCardBox = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  transition: 0.3s;
+  :hover {
+    border-color: #6a5ae0;
+    cursor: pointer;
+    box-shadow: 1px 3px 10px 1px #6a5ae0;
+  }
 `;
 export const QuizCardIconBox = styled.div`
   width: 70px;

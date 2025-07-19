@@ -7,6 +7,7 @@ import QuizLibrary from "./features/pages/QuizLibrary/QuizLibrary";
 import { Box } from "@mui/material";
 import Topbar from "./assets/components/Topbar";
 import Dashboard from "./features/pages/Dashboard/Dashboard";
+import QuizeSetting from "./features/pages/Settings/QuizSetting";
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
             <Route path="/discover" element={<Discover />} />
             <Route path="/leaderboard" element={<Leaderboard />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/quiz/:id" element={<QuizeSetting />} />
           </Routes>
         </Box>
       </Box>

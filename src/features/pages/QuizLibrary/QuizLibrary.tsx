@@ -32,7 +32,7 @@ import type { CategoryData } from "../types";
 import { CreateQuizModal } from "../QuizLibrary/components/CategoryModal";
 import { quizList } from "../QuizLibrary/components/mocData";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-
+import { useNavigate } from "react-router-dom";
 type Props = {};
 const style = {
   position: "absolute",
@@ -51,7 +51,7 @@ function QuizLibrary({}: Props) {
   const [categoryOpen, setCategoryOpen] = useState(false);
   const [createOpen, setCreateOpen] = useState(false);
   const [image, setImage] = useState<string | null>(null);
-
+  const navigate = useNavigate();
   const handleCreateQuiz = () => setCreateOpen(true);
   const handleCloseCreate = () => setCreateOpen(false);
   const handleCloseCategory = () => setCategoryOpen(false);
@@ -87,19 +87,23 @@ function QuizLibrary({}: Props) {
 
         <MenubarBtns>
           <Button
-            variant="contained"
+            variant="outlined"
             endIcon={<KeyboardArrowDownIcon />}
+            sx={{ padding: "15px 25px" }}
             onClick={() => setCategoryOpen(true)}
           >
             Category (5)
           </Button>
 
-          <Button variant="contained" onClick={handleCreateQuiz}>
+          <Button
+            variant="contained"
+            sx={{ padding: "15px 25px" }}
+            onClick={handleCreateQuiz}
+          >
             Create Quiz <AddIcon />
           </Button>
         </MenubarBtns>
       </QuizeMenuBar>
-      {/* 🎯 CREATE QUIZ MODAL */}
       <Modal
         open={createOpen}
         onClose={handleCloseCreate}
@@ -176,7 +180,18 @@ function QuizLibrary({}: Props) {
         {quizData.map((item) => {
           const IconComponent = item.icon;
           return (
-            <QuizCardBox>
+            <QuizCardBox
+              key={item.id}
+              onClick={() =>
+                navigate(`/quiz/${item.id}`, {
+                  state: {
+                    title: item.title,
+                    id: item.id,
+                    questions: item.questions,
+                  },
+                })
+              }
+            >
               <Box
                 sx={{
                   display: "flex",
