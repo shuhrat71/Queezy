@@ -75,11 +75,13 @@ export const quizList = [
       "Explore the fascinating history and memorable moments of the Olympic Games.",
     questions: [
       {
+        id: 1,
         question: "When were the first modern Olympic Games held?",
         description:
           "Learn about the origin and timeline of the Olympic Games.",
       },
       {
+        id: 2,
         question: "Which city has hosted the Olympics the most times?",
         description: "Test your knowledge about Olympic host cities.",
       },
@@ -95,10 +97,12 @@ export const quizList = [
       "Test your knowledge on world-famous classic novels and their authors.",
     questions: [
       {
+        id: 1,
         question: "Who wrote 'Crime and Punishment'?",
         description: "Explore famous classic authors and their works.",
       },
       {
+        id: 2,
         question: "In which novel does 'Jay Gatsby' appear?",
         description: "Identify characters and the novels they belong to.",
       },
@@ -114,10 +118,12 @@ export const quizList = [
       "Dive into the biggest tech breakthroughs and modern innovations.",
     questions: [
       {
+        id: 1,
         question: "Who invented the World Wide Web?",
         description: "Discover key figures in technology development.",
       },
       {
+        id: 2,
         question: "What is Moore's Law?",
         description: "Understand growth trends in computer hardware.",
       },
@@ -133,10 +139,12 @@ export const quizList = [
       "Challenge your understanding of biological systems and concepts.",
     questions: [
       {
+        id: 1,
         question: "What part of the cell is known as the powerhouse?",
         description: "Test your cell biology knowledge.",
       },
       {
+        id: 2,
         question: "Which system controls body hormones?",
         description: "Explore human systems and their roles.",
       },
@@ -152,10 +160,12 @@ export const quizList = [
       "Discover the cultures, inventions, and leaders of ancient civilizations.",
     questions: [
       {
+        id: 1,
         question: "Which river was central to Ancient Egyptian civilization?",
         description: "Identify geography's role in early civilizations.",
       },
       {
+        id: 2,
         question: "Who was the ruler of the Maurya Empire during its peak?",
         description: "Learn about influential ancient rulers.",
       },
@@ -171,10 +181,12 @@ export const quizList = [
       "Solve real-world problems with statistics, probability, and data analysis.",
     questions: [
       {
+        id: 1,
         question: "What is the mean of the numbers: 2, 4, 6, 8?",
         description: "Practice calculating averages in data sets.",
       },
       {
+        id: 2,
         question: "What does the standard deviation represent?",
         description: "Understand spread and variability in data.",
       },
@@ -190,10 +202,12 @@ export const quizList = [
       "Show off your football team knowledge from leagues around the world.",
     questions: [
       {
+        id: 1,
         question: "Which team has won the most UEFA Champions League titles?",
         description: "Test your knowledge of European football.",
       },
       {
+        id: 2,
         question: "Who is the all-time top scorer for FC Barcelona?",
         description: "Identify legendary players and their stats.",
       },
@@ -209,10 +223,12 @@ export const quizList = [
       "Understand the core principles of life, cells, and organisms.",
     questions: [
       {
+        id: 1,
         question: "What is the basic unit of life?",
         description: "Reinforce foundational biology concepts.",
       },
       {
+        id: 2,
         question: "What is the function of DNA?",
         description: "Explore genetic material and its purpose.",
       },
@@ -228,10 +244,12 @@ export const quizList = [
       "Explore the wonders of galaxies, stars, and cosmic phenomena.",
     questions: [
       {
+        id: 1,
         question: "What galaxy is Earth located in?",
         description: "Discover our position in the universe.",
       },
       {
+        id: 2,
         question: "What are nebulas made of?",
         description: "Understand the birthplaces of stars.",
       },
@@ -247,10 +265,12 @@ export const quizList = [
       "Trace the journey of evolution from single cells to complex species.",
     questions: [
       {
+        id: 1,
         question: "Who proposed the theory of natural selection?",
         description: "Explore key concepts of evolutionary biology.",
       },
       {
+        id: 2,
         question: "What is a common ancestor?",
         description: "Learn about species connections through evolution.",
       },
@@ -266,10 +286,12 @@ export const quizList = [
       "Understand how elements combine and react in chemical processes.",
     questions: [
       {
+        id: 1,
         question: "What is the product of HCl and NaOH reaction?",
         description: "Examine acid-base chemical reactions.",
       },
       {
+        id: 2,
         question: "What is a catalyst?",
         description: "Understand how reactions speed up or slow down.",
       },
@@ -285,10 +307,12 @@ export const quizList = [
       "Test yourself on football players, team history, and championships.",
     questions: [
       {
+        id: 1,
         question: "Which country won the 2018 FIFA World Cup?",
         description: "Recall recent international football events.",
       },
       {
+        id: 2,
         question: "Who is the all-time leading scorer in World Cup history?",
         description: "Test your knowledge of football legends.",
       },

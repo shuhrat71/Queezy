@@ -145,22 +145,6 @@ export const ModalActionBtn = styled.div`
   padding: 13px 25px;
   gap: 16px;
   justify-content: space-between;
-  button {
-    width: 100%;
-    padding: 15px 20px;
-    margin-bottom: 18px;
-    border-radius: 20px;
-    background-color: #6a5ae0;
-    outline: none;
-    border: none;
-    color: #fff;
-    font-weight: 600;
-  }
-  button:first-child {
-    background-color: #fff;
-    border: 2px solid #6a5ae0;
-    color: #6a5ae0;
-  }
 `;
 export const QuizCardWrapper = styled.div`
   display: flex;

@@ -13,22 +13,25 @@ const components: Components = {
         outline: "none",
         border: "none",
         boxShadow: "none",
+        padding: "15px 26px",
+        fontWeight: 600,
         "&:hover": {
           backgroundColor: "#5b00d1",
           boxShadow: "none",
         },
       },
       outlined: {
-        background: "#efeefc",
+        backgroundColor: "#efeefc",
         color: "#6a5ae0",
         outline: "none",
         border: "none",
+        fontWeight: 600,
+        fontSize: "17px",
+        "&:hover": {
+          backgroundColor: "#dcdcf2",
+        },
       },
     },
   },
 };
 export default components;
-// padding: 15px 16px;
-//     border-radius: 20px;
-//     outline: none;
-//     background-color: #6a5ae0;

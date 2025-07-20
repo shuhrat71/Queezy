@@ -93,10 +93,20 @@ export const CreateQuizModal = ({
         </Box>
       </DialogContent>
       <ModalActionBtn>
-        <Button onClick={onClose} variant="outlined">
+        <Button
+          onClick={onClose}
+          variant="outlined"
+          fullWidth
+          sx={{ padding: "15px 20px" }}
+        >
           Cancel
         </Button>
-        <Button onClick={handleSubmit} variant="contained">
+        <Button
+          onClick={handleSubmit}
+          fullWidth
+          variant="contained"
+          sx={{ padding: "15px 20px" }}
+        >
           Category
         </Button>
       </ModalActionBtn>
