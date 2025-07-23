@@ -6,7 +6,7 @@ import {
   LiveQuizes,
 } from "./CategoryStyles";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import { quizCategories, quizList } from "../QuizLibrary/components/mocData";
+import { quizCategories, quizList } from "../components/mocData";
 import { QuizCardBox, QuizCardIconBox, QuizCardWrapper } from "../QuizLibrary";
 const categoryQuizData = quizCategories;
 type Props = {};

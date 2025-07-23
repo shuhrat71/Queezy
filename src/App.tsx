@@ -7,7 +7,7 @@ import QuizLibrary from "./features/pages/QuizLibrary/QuizLibrary";
 import { Box } from "@mui/material";
 import Topbar from "./assets/components/Topbar";
 import Dashboard from "./features/pages/Dashboard/Dashboard";
-import QuizeSetting from "./features/pages/Settings/QuizSetting";
+import QuizeSetting from "./features/pages/components/QuizSetting";
 
 function App() {
   return (

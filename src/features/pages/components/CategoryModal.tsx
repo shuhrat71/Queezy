@@ -8,9 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import { useState } from "react";
-import type { CategoryData } from "../../types";
+import type { CategoryData } from "../types";
 import { quizCategories } from "../components/mocData";
-import { BoxImg, CategoryQuizBox, ModalActionBtn } from "../index";
+import { BoxImg, CategoryQuizBox, ModalActionBtn } from "../QuizLibrary/index";
 import CloseIcon from "@mui/icons-material/Close";
 const data = quizCategories;
 

@@ -6,6 +6,8 @@ const components: Components = {
       root: {
         borderRadius: "20px",
         textTransform: "none",
+        border: "none",
+        boxShadow: "none",
       },
       contained: {
         backgroundColor: "#6a5ae0",
@@ -28,8 +30,36 @@ const components: Components = {
         fontWeight: 600,
         fontSize: "17px",
         "&:hover": {
-          backgroundColor: "#dcdcf2",
+          borderC: "2px solid #6a5ae0",
         },
+      },
+    },
+  },
+  MuiOutlinedInput: {
+    styleOverrides: {
+      root: {
+        borderRadius: "20px",
+        paddingRight: "10px",
+        "&:hover .MuiOutlinedInput-notchedOutline": {
+          borderColor: "#D1CFFF",
+        },
+        "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+          borderColor: "#6C47FF",
+        },
+      },
+      notchedOutline: {
+        // borderColor: "#E9E5FF",
+      },
+      input: {
+        fontWeight: 600,
+        color: "#3B3553",
+      },
+    },
+  },
+  MuiSelect: {
+    styleOverrides: {
+      icon: {
+        color: "#6C47FF", // Pastga ikon rangi
       },
     },
   },
