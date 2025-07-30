@@ -319,3 +319,9 @@ export const quizList = [
     ],
   },
 ];
+
+export const PerformanceData = [
+  { id: 0, value: 70, label: "Music", color: "#6C4CF1" },
+  { id: 1, value: 17, label: "Sports", color: "#FF8CA3" },
+  { id: 2, value: 13, label: "Math", color: "#CBDCFF" },
+];

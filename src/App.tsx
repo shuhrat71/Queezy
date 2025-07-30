@@ -12,7 +12,6 @@ import QuizeSetting from "./features/pages/components/QuizSetting";
 function App() {
   return (
     <Box sx={{ display: "flex", height: "100vh", width: "100vw" }}>
-      {/* Sidebar chapda */}
       <Box sx={{ width: 250, flexShrink: 0 }}>
         <Sidebar />
       </Box>
@@ -48,7 +47,7 @@ function App() {
           }}
         >
           <Routes>
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/" element={<Dashboard />} />
             <Route path="/quizLibrary" element={<QuizLibrary />} />
             <Route path="/discover" element={<Discover />} />
             <Route path="/leaderboard" element={<Leaderboard />} />

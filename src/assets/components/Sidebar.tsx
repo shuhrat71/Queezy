@@ -11,7 +11,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const navItems = [
-  { label: "Dashboard", icon: <HomeIcon />, path: "/dashboard" },
+  { label: "Dashboard", icon: <HomeIcon />, path: "/" },
   { label: "Leaderboard", icon: <LeaderboardIcon />, path: "/leaderboard" },
   { label: "Discover", icon: <SearchIcon />, path: "/discover" },
   { label: "Quiz Library", icon: <ExtensionIcon />, path: "/quizLibrary" },
